@@ -1,0 +1,366 @@
+/* Simple styles for the gym website */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #f6f6f3;
+  background: #151716;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 8%;
+  background: #151716;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.logo span,
+.hero h1 span {
+  color: #c8f31d;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  color: #c5c8c2;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #c8f31d;
+}
+
+.join-link {
+  color: #c8f31d;
+  font-weight: bold;
+}
+
+/* Main content and banner */
+main {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 5%;
+}
+
+.hero {
+  min-height: 470px;
+  display: flex;
+  align-items: center;
+  padding: 45px 7%;
+  border-radius: 14px;
+  background:
+    linear-gradient(90deg, rgba(15, 18, 16, .96), rgba(15, 18, 16, .2)),
+    url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=85") center/cover;
+}
+
+.hero-content {
+  max-width: 480px;
+}
+
+.eyebrow {
+  color: #c8f31d;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.hero h1 {
+  margin: 12px 0;
+  font-size: clamp(48px, 8vw, 82px);
+  line-height: .9;
+  letter-spacing: -3px;
+}
+
+.hero-content > p:not(.eyebrow) {
+  color: #d2d4d0;
+}
+
+/* Buttons and hover transition */
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 5px;
+  background: #c8f31d;
+  color: #151716;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s, background .2s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  background: #ddff49;
+}
+
+section:not(.hero) {
+  padding-top: 55px;
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+
+/* Program cards and membership plans */
+.card-grid,
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card,
+.plan {
+  padding: 22px;
+  border: 1px solid #343935;
+  border-radius: 10px;
+  background: #202421;
+  transition: transform .2s, border-color .2s;
+}
+
+.card:hover,
+.plan:hover {
+  transform: translateY(-4px);
+  border-color: #c8f31d;
+}
+
+.card h3,
+.plan h3 {
+  margin: 8px 0;
+}
+
+.card p,
+.facility-section p,
+.join-section p {
+  color: #b7bcb6;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+/* Facilities */
+.facility-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+  padding: 28px !important;
+  border-radius: 10px;
+  background: #202421;
+}
+
+.facility-list {
+  padding: 0;
+  list-style: none;
+}
+
+.facility-list li {
+  margin: 12px 0;
+  color: #d6d9d4;
+}
+
+/* Trainer cards */
+.trainer-card {
+  overflow: hidden;
+  border-radius: 10px;
+  background: #202421;
+  transition: transform .2s;
+}
+
+.trainer-card:hover {
+  transform: translateY(-4px);
+}
+
+.trainer-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.trainer-card h3,
+.trainer-card p {
+  margin: 10px 15px;
+}
+
+.trainer-card p {
+  color: #b7bcb6;
+}
+
+/* Pricing table cards */
+.plan {
+  position: relative;
+}
+
+.plan p {
+  color: #c6cac4;
+}
+
+.price {
+  font-size: 27px;
+  font-weight: bold;
+  color: #c8f31d !important;
+}
+
+.price span {
+  color: #aeb3ad;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.featured {
+  border: 2px solid #c8f31d;
+}
+
+.popular {
+  color: #c8f31d !important;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.outline {
+  border: 1px solid #c8f31d;
+  background: transparent;
+  color: #c8f31d;
+}
+
+.outline:hover {
+  background: #c8f31d;
+  color: #151716;
+}
+
+/* Class schedule */
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #202421;
+}
+
+th,
+td {
+  padding: 14px;
+  border-bottom: 1px solid #343935;
+  text-align: left;
+}
+
+th {
+  color: #c8f31d;
+}
+
+/* Registration form */
+.join-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: start;
+  padding: 30px !important;
+  border-radius: 10px;
+  background: #202421;
+}
+
+form {
+  display: grid;
+  gap: 9px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #454b46;
+  border-radius: 5px;
+  background: #151716;
+  color: white;
+  font: inherit;
+}
+
+form button {
+  margin-top: 8px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 55px;
+  padding: 20px 8%;
+  border-top: 1px solid #343935;
+  color: #adb2ac;
+}
+
+/* Tablet screen */
+@media (max-width: 750px) {
+  .card-grid,
+  .plans-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    min-height: 420px;
+  }
+}
+
+/* Phone screen */
+@media (max-width: 520px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 390px;
+    padding: 28px;
+  }
+
+  .card-grid,
+  .plans-grid,
+  .facility-section,
+  .join-section {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
