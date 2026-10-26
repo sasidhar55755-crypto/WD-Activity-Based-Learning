@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronPeak Fitness Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">IRON<span>PEAK</span></a>
+    <nav>
+      <a href="#programs">Programs</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#plans">Membership</a>
+      <a href="#schedule">Classes</a>
+    </nav>
+    <a class="join-link" href="#join">Join now</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR WORKOUT. YOUR WAY.</p>
+        <h1>BUILD<br>YOUR<br><span>STRONG.</span></h1>
+        <p>Train with great coaches, modern equipment, and a community that keeps you moving.</p>
+        <a class="button" href="#plans">Find your membership</a>
+      </div>
+    </section>
+
+    <section id="programs">
+      <p class="eyebrow">FIND YOUR FOCUS</p>
+      <h2>Workout programs</h2>
+      <div class="card-grid">
+        <article class="card">
+          <div class="icon">🏋️</div>
+          <h3>Strength Training</h3>
+          <p>Build strength with guided weight training for every level.</p>
+        </article>
+        <article class="card">
+          <div class="icon">⚡</div>
+          <h3>HIIT & Conditioning</h3>
+          <p>Short, energetic workouts that help build stamina.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🧘</div>
+          <h3>Yoga & Mobility</h3>
+          <p>Stretch, move, and improve your balance and flexibility.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="facility-section" id="facilities">
+      <div>
+        <p class="eyebrow">ROOM TO MOVE</p>
+        <h2>Facilities that work as hard as you do</h2>
+        <p>Get access to a welcoming training space with the equipment and support you need.</p>
+      </div>
+      <ul class="facility-list">
+        <li>✓ Modern cardio and strength equipment</li>
+        <li>✓ Dedicated free weights area</li>
+        <li>✓ Group exercise studio</li>
+        <li>✓ Changing rooms and lockers</li>
+      </ul>
+    </section>
+
+    <section id="trainers">
+      <p class="eyebrow">MEET YOUR COACHES</p>
+      <h2>Trainers who support your goals</h2>
+      <div class="card-grid">
+        <article class="trainer-card">
+          <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=700&q=80" alt="Fitness trainer Alex">
+          <h3>Alex Morgan</h3>
+          <p>Strength Coach</p>
+        </article>
+        <article class="trainer-card">
+          <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=700&q=80" alt="Fitness trainer Priya">
+          <h3>Priya Shah</h3>
+          <p>Yoga Instructor</p>
+        </article>
+        <article class="trainer-card">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80" alt="Fitness trainer Jordan">
+          <h3>Jordan Lee</h3>
+          <p>Conditioning Coach</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="plans">
+      <p class="eyebrow">SIMPLE MEMBERSHIP OPTIONS</p>
+      <h2>Choose your plan</h2>
+      <div class="plans-grid">
+        <article class="plan">
+          <h3>Basic</h3>
+          <p class="price">₹999 <span>/ month</span></p>
+          <p>Gym floor access</p>
+          <p>Locker access</p>
+          <a class="button outline" href="#join">Choose Basic</a>
+        </article>
+
+        <article class="plan featured">
+          <p class="popular">MOST POPULAR</p>
+          <h3>Plus</h3>
+          <p class="price">₹1,699 <span>/ month</span></p>
+          <p>Gym floor access</p>
+          <p>Group classes included</p>
+          <a class="button" href="#join">Choose Plus</a>
+        </article>
+
+        <article class="plan">
+          <h3>Personal</h3>
+          <p class="price">₹2,999 <span>/ month</span></p>
+          <p>All Plus benefits</p>
+          <p>One coaching session</p>
+          <a class="button outline" href="#join">Choose Personal</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <p class="eyebrow">PLAN YOUR WEEK</p>
+      <h2>Group class schedule</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Day</th><th>Class</th><th>Time</th><th>Coach</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday</td><td>Strength Basics</td><td>7:00 AM</td><td>Alex</td></tr>
+            <tr><td>Tuesday</td><td>Yoga Flow</td><td>6:00 PM</td><td>Priya</td></tr>
+            <tr><td>Wednesday</td><td>HIIT Circuit</td><td>7:00 AM</td><td>Jordan</td></tr>
+            <tr><td>Friday</td><td>Mobility & Stretch</td><td>6:00 PM</td><td>Priya</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="join-section" id="join">
+      <div>
+        <p class="eyebrow">TAKE THE FIRST STEP</p>
+        <h2>Register your interest</h2>
+        <p>Fill in the form and our team will help you find the right plan.</p>
+      </div>
+
+      <form action="#" method="get">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="plan">Membership plan</label>
+        <select id="plan" name="plan">
+          <option>Basic</option>
+          <option>Plus</option>
+          <option>Personal</option>
+        </select>
+
+        <button class="button" type="submit">Send registration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">IRON<span>PEAK</span></a>
+    <p>Show up. Get stronger. Repeat.</p>
+  </footer>
+</body>
+</html>
